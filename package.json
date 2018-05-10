@@ -1,0 +1,19 @@
+{
+  "name": "origami-plugin-spa",
+  "version": "0.0.1",
+  "description": "Single Page Application for the Origami platform",
+  "main": "build/index.js",
+  "repository": "https://github.com/origami-cms/plugin-spa",
+  "author": "Tristan Matthias <hello@tristanmathias.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "origami-core-server": "^0.3.3"
+  },
+  "devDependencies": {
+    "tslint": "^5.9.1",
+    "typescript": "^2.8.3"
+  }
+}
