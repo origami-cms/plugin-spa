@@ -9,7 +9,7 @@ module.exports = (server: Server, options: SPAOptions) => {
     const r = new Route('*')
         .position('post-render')
         .use(async (req, res, next) => {
-            const body = res.body || res.text || res.data;
+            const body = res.body || res.text || res.data || res.responseCode;
             if (!res.headersSent && !body) res.sendFile(path.resolve(process.cwd(), options.fallback));
             else next();
         });
